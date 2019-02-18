@@ -1,0 +1,39 @@
+.fly-in-text {
+	list-style: none;
+}
+
+.fly-in-text li {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 5rem;
+	color: #151519;
+	opacity: 1;
+}
+
+/* appear - on page load */
+.fade-appear {
+    opacity: 0;
+	z-index: 1;
+	transform:  translate3d(0, -50px, 0);
+}
+.fade-appear.fade-appear-active {
+	opacity: 1;
+	transition: opacity 1000ms linear, transform 1000ms ease-in-out;
+	transform:  translate3d(0, 0, 0);
+}
+
+/* exit */
+.fade-exit {
+	opacity: 1;
+	z-index: 1;
+	transform:  translate3d(0, 0, 0);
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+	transition: opacity 500ms linear, transform 500ms ease-in-out;
+	transform: translate3d(0, -50px, 0);
+}
+.fade-exit-done {
+  opacity: 0;
+}
+

@@ -1,33 +1,112 @@
-.App {
-  text-align: center;
+.wrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-weight: lighter;
+	font-size: 40px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.welcome-section {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content-wrap {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.App-link {
-  color: #61dafb;
+.enter-button {
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	color: #f7b10a;
+	margin-top: 35px;
+	padding-top: 5px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-bottom: 5px;
+	border-radius: 40px;
+	border: 1px solid #f7b10a;
+}	
+
+.description {
+	font-size: 30px;
+	margin-top: 10%;
+	color: #151519;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.enter-button-section {
+	width: 350px;
+	margin:	0 auto;
+	text-align: center;
+}
+
+
+.enter-button:hover {
+	background-color: #f7b10a;
+	cursor: pointer;
+	color: #fff;
+}
+
+/* appear - on page load */
+.fade-descr-appear {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-descr-appear.fade-descr-appear-active {
+	opacity: 1;
+	transition: opacity 1000ms linear;
+	transition-delay: 2s;
+}
+
+/* exit */
+.fade-descr-exit {
+	opacity: 1;
+	z-index: 1;
+}
+.fade-descr-exit.fade-descr-exit-active {
+    opacity: 0;
+	transition: opacity 500ms linear;
+}
+.fade-descr-exit-done {
+  opacity: 0;
+}
+
+/* appear - on page load */
+.fade-btn-appear {
+    opacity: 0;
+	z-index: 1;
+	transform:  translate3d(0, 50px, 0);
+}
+.fade-btn-appear.fade-btn-appear-active {
+	opacity: 1;
+	transition: opacity 1000ms linear, transform 1000ms ease-in-out;
+	transform:  translate3d(0, 0, 0);
+	transition-delay: 2s;
+}
+
+/* exit */
+.fade-btn-exit {
+	opacity: 1;
+	z-index: 1;
+	transform:  translate3d(0, 0, 0);
+}
+.fade-btn-exit.fade-btn-exit-active {
+    opacity: 0;
+	transition: opacity 500ms linear, transform 500ms ease-in-out;
+	transform: translate3d(0, 50px, 0);
+}
+.fade-btn-exit-done {
+  opacity: 0;
 }
