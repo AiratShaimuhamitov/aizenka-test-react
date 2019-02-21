@@ -7,6 +7,7 @@ class App extends Component {
 
   constructor(props){
     super(props)
+    this.handleChildUnmount = this.handleChildUnmount.bind(this);
     this.state = { 
       toRender: [
         <WelcomeSection unmountMe={this.handleChildUnmount}/>, //[0] - welcome section
@@ -14,7 +15,6 @@ class App extends Component {
       ],
       renderIndex: 0
     };
-    this.handleChildUnmount = this.handleChildUnmount.bind(this);
   }
 
   toggleSection() {
