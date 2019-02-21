@@ -49,7 +49,6 @@ class WelcomeSection extends Component {
         this.toggleAppearSection()
         this.child.handleClick()
         setTimeout(function() {this.dismiss()}.bind(this), 1000)
-        console.log(this.state.appearSection);
     }
 
     dismiss() {
