@@ -76,7 +76,7 @@
 
 /* appear - on page load */
 .fade-btn-appear {
-    opacity: 0;
+  opacity: 0;
 	z-index: 1;
 	transform:  translate3d(0, 50px, 0);
 }
@@ -94,7 +94,7 @@
 	transform:  translate3d(0, 0, 0);
 }
 .fade-btn-exit.fade-btn-exit-active {
-    opacity: 0;
+  opacity: 0;
 	transition: opacity 500ms linear, transform 500ms ease-in-out;
 	transform: translate3d(0, 50px, 0);
 }
