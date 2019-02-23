@@ -11,7 +11,7 @@ class App extends Component {
     this.state = { 
       toRender: [
         <WelcomeSection unmountMe={this.handleChildUnmount}/>, //[0] - welcome section
-        <DescriptionSection/> //[1] - description section
+        <DescriptionSection unmountMe={this.handleChildUnmount}/> //[1] - description section
       ],
       renderIndex: 0
     };

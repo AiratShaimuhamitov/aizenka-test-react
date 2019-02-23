@@ -26,6 +26,13 @@
     font-size: 1.5rem;
 }
 
+.continue-btn {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 40%;
+}
+
 /* appear - on page load */
 .fade-lable-appear {
     opacity: 0;
@@ -38,6 +45,22 @@
 	transform: translate3d(0, 0, 0);
 }
 
+/* exit */
+.fade-lable-exit {
+	opacity: 1;
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+}
+.fade-lable-exit.fade-lable-exit-active {
+    opacity: 0;
+	transition: opacity 500ms linear, transform 500ms ease-in-out;
+	transform: translate3d(-100px, 0, 0);
+}
+.fade-lable-exit-done {
+  opacity: 0;
+}
+
+/* appear - on page load */
 .fade-text-appear {
     opacity: 0;
     z-index: 1;
@@ -47,4 +70,42 @@
 	opacity: 1;
     transition: opacity 1000ms linear, transform 500ms ease-in-out;
 	transform: translate3d(0, 0, 0);
+}
+
+/* exit */
+.fade-text-exit {
+	opacity: 1;
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+}
+.fade-text-exit.fade-text-exit-active {
+    opacity: 0;
+	transition: opacity 500ms linear, transform 500ms ease-in-out;
+	transform: translate3d(100px, 0, 0);
+}
+.fade-text-exit-done {
+    opacity: 0;
+}
+
+/* appear - on page load */
+.fade-btn-descr-appear {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-btn-descr-appear.fade-btn-descr-appear-active {
+    opacity: 1;
+    transition: opacity 1000ms linear;
+}
+
+/* exit */
+.fade-btn-descr-exit {
+    opacity: 1;
+    z-index: 1;
+}
+.fade-btn-descr-exit.fade-btn-descr-exit-active {
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+.fade-btn-descr-exit-done {
+    opacity: 0;
 }

@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './welcome-section-style.css'
 import FlyInText from '../fly-in-text';
 import {CSSTransition} from 'react-transition-group'
+import MenuButton from '../menu-items/menu-btn/menu-button'
 
 class WelcomeSection extends Component {
     state = {
@@ -27,7 +28,8 @@ class WelcomeSection extends Component {
                   classNames="fade-descr"
               >
                 <div className="description">
-                  Это тест Айзенка – Русалова. Нажми на кнопку ниже чтобы начать
+                  <p>Это тест Айзенка – Русалова.</p>
+                  <p>Нажми на кнопку ниже чтобы начать</p>
                 </div>   
               </CSSTransition>  
               <CSSTransition
@@ -36,8 +38,8 @@ class WelcomeSection extends Component {
                 timeout={3000}
                 classNames="fade-btn"
               >
-                <div className="enter-button-section">
-                  <a href="#" className="enter-button" onClick={this.handleClick}>Начать тест</a>
+                <div>
+                  <MenuButton onButtonClick={this.handleClick.bind(this)} text="Начать тест"/>
                 </div>
               </CSSTransition>
             </div>

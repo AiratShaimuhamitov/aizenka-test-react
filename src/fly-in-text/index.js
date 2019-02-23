@@ -4,13 +4,9 @@ import './index.css';
 
 class FlyInText extends Component {
     
-    constructor(props) {
-        super();
-        
-        this.state = {
-            letters: props.letters,
-            appear: true
-        }
+    state = {
+        letters: this.props.letters,
+        appear: true
     }
 
     handleClick() {
