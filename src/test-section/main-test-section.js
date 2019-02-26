@@ -4,8 +4,6 @@ import questions from '../resources/qeustions'
 import QuestionSection from './question-section/question-section-index'
 import ResultSection from './result-section/result-section-index'
 
-import './main-test-section.css'
-
 export default class MainTestSection extends Component {
 
   constructor(props) {
@@ -26,7 +24,7 @@ export default class MainTestSection extends Component {
 
     return (
       <div className='test-section'>
-           {toRender}
+        {toRender}
       </div>
     )
   }
@@ -40,7 +38,7 @@ export default class MainTestSection extends Component {
     this.toggleQuestion();
   }
 
-  toggleQuestion = () => {
+  toggleQuestion() {
     const newIndex = this.state.question.index + 1;
     this.setState({
       question: questions.list[newIndex]

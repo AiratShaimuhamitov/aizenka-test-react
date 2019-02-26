@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {CSSTransition} from 'react-transition-group'
+import { CSSTransition } from 'react-transition-group'
 import './question-section-style.css'
 import MenuButton from '../../menu-items/menu-btn/menu-button'
 
@@ -23,7 +23,7 @@ export default class QuestionSection extends Component {
           in={appearSection}
           appear={true}
           timeout={1000}
-          classNames="question-lable"
+          classNames="question-number"
         >
           <div className="label-txt">
           	{this.props.question.index + 1}/{this.props.count}

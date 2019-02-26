@@ -27,38 +27,39 @@
     left: 32.5%;
 }
 
-.question-lable-appear {
+.question-number-appear {
     opacity: 0;
     z-index: 1;
     transform: translate3d(50px, 0, 0);
 }
 
-.question-lable-appear.question-lable-appear-active {
+.question-number-appear.question-number-appear-active {
     opacity: 1;
     transition: opacity 500ms ease-in, transform 500ms ease-in;
     transform: translate3d(0, 0, 0);
 }
 
-.question-lable-enter {
+.question-number-enter {
     font-size: 4rem;
     z-index: 1;
     transform: font-size;
   }
-.question-lable-enter.question-lable-enter-active {
+
+.question-number-enter.question-number-enter-active {
     font-size: 3rem;
-    transition: font-size 500ms ease-in;
+    transition: font-size 500ms linear;
 }
 
-.question-lable-exit {
+.question-number-exit {
     font-size: 3rem;
 }
 
-.question-lable-exit.question-lable-exit-active {
+.question-number-exit.question-number-exit-active {
     font-size: 4rem;
-    transition: font-size 500ms ease-in;
+    transition: font-size 500ms linear;
 }
 
-.question-lable-exit-done {
+.question-number-exit-done {
     font-size: 4rem;
 }
 

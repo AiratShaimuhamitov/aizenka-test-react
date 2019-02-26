@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './welcome-section-style.css'
 import FlyInText from '../fly-in-text';
-import {CSSTransition} from 'react-transition-group'
+import { CSSTransition } from 'react-transition-group'
 import MenuButton from '../menu-items/menu-btn/menu-button'
 
 class WelcomeSection extends Component {

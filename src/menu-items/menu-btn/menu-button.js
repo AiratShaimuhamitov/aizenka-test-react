@@ -10,9 +10,9 @@ export default class MenuButton extends Component {
   render() {
 		const { onButtonClick } = this.props 
     return (
-        <div className="menu-button-section">
-            <a href="#/" className="menu-button" onClick={onButtonClick}>{this.state.text}</a>
-        </div>
+      <div className="menu-button-section">
+          <a href="#/" className="menu-button" onClick={onButtonClick}>{this.state.text}</a>
+      </div>
     )
 	}
 }

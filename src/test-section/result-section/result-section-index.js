@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import {CSSTransition} from 'react-transition-group'
-import moduleName from './result-section-style.css'
+import { CSSTransition } from 'react-transition-group'
+import './result-section-style.css'
 
 export default class ResultSection extends Component {
 	

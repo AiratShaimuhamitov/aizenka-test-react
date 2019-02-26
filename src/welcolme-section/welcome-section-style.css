@@ -6,6 +6,7 @@
 	left: 0;
 	background: #fff;
 	overflow: hidden;
+	color: #151519;
 }
 
 .content-wrap {
@@ -19,7 +20,6 @@
 .description {
 	font-size: 30px;
 	margin-top: 10%;
-	color: #151519;
 }
 
 /* appear - on page load */
