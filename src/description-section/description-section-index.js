@@ -62,7 +62,6 @@ export default class DescriptionSection extends Component {
   }
 
   dismiss() {
-    console.log("dismiss()")
     this.props.unmountMe()
   }
 

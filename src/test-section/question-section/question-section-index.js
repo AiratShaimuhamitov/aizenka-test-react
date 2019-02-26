@@ -10,14 +10,9 @@ export default class QuestionSection extends Component {
 	}
 
   toggleAppear = () => {
-    console.log("appear section toggled")
     this.setState({
       appearSection: !this.state.appearSection
     })
-  }
-
-  componentWillUpdate() {
-    console.log("component will update!")
   }
 
   render() {

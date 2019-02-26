@@ -9,6 +9,8 @@ export default class ResultSection extends Component {
 		
 		const answers = props.answers
 		
+		console.log(answers);
+
 		const alpha = this.getAlpha(answers)
 		const beta = this.getBeta(answers)
 		const gamma = this.getGamma(answers)
@@ -221,15 +223,15 @@ export default class ResultSection extends Component {
               <p>Ну что, давай посмотрим твои результаты..</p>
           </div>
         </CSSTransition>
-		<CSSTransition
+				<CSSTransition
           in={this.state.appearSection}
           appear={true}
           timeout={3000}
           classNames="fade-text"
         >
           <div className="result-text">
-			{this.state.result}
-			<p>Подробнее можешь почитать в <a href={this.state.wikiLink}>википедии</a>.</p>
+						{this.state.result}
+						<p>Подробнее можешь почитать в <a href={this.state.wikiLink}>википедии</a>.</p>
           </div>
         </CSSTransition>
       </div>

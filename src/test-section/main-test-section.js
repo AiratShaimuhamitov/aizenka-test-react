@@ -37,12 +37,10 @@ export default class MainTestSection extends Component {
     this.setState({
       answers: answers
     })
-    console.log(this.state.answers);
     this.toggleQuestion();
   }
 
   toggleQuestion = () => {
-    console.log("index = " + (this.state.question.index + 1))
     const newIndex = this.state.question.index + 1;
     this.setState({
       question: questions.list[newIndex]
