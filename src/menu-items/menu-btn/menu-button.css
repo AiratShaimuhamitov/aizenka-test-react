@@ -15,8 +15,9 @@
 
 
 .menu-button-section {
+	display: inline-block;
 	width: 350px;
-	margin:	0 auto;
+	margin:	5px;
 	text-align: center;
 }
 
