@@ -1,0 +1,23 @@
+.test-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.yes-btn {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 30%;
+}
+
+.not-btn {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%; 
+}

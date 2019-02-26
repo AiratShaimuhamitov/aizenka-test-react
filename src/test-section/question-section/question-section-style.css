@@ -1,0 +1,100 @@
+.label-txt {
+	position: absolute;
+	text-align: center;
+	top: 27.5%;
+    left: 65%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+}
+
+.text-txt {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top: 39.0%;
+    left: 27.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+}
+
+.btn-wrapper {
+    position: absolute;
+    top: 60.0%;
+    left: 32.5%;
+}
+
+.question-lable-appear {
+    opacity: 0;
+    z-index: 1;
+    transform: translate3d(50px, 0, 0);
+}
+
+.question-lable-appear.question-lable-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transform: translate3d(0, 0, 0);
+}
+
+.question-lable-enter {
+    font-size: 4rem;
+    z-index: 1;
+    transform: font-size;
+  }
+.question-lable-enter.question-lable-enter-active {
+    font-size: 3rem;
+    transition: font-size 500ms ease-in;
+}
+
+.question-lable-exit {
+    font-size: 3rem;
+}
+
+.question-lable-exit.question-lable-exit-active {
+    font-size: 4rem;
+    transition: font-size 500ms ease-in;
+}
+
+.question-lable-exit-done {
+    font-size: 4rem;
+}
+
+
+.question-text-appear {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+}
+
+.question-text-appear.question-text-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transform: translate3d(0, 0, 0);
+}
+
+.question-text-enter {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+.question-text-enter.question-text-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transform: translate3d(0, 0, 0);
+}
+
+.question-text-exit {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.question-text-exit.question-text-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transform: translate3d(50px, 0, 0);
+}
+
+.question-text-exit-done {
+    opacity: 0;
+}

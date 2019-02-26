@@ -2,18 +2,20 @@ import React, { Component } from 'react';
 import './App.css';
 import WelcomeSection from './welcolme-section/welcome-section-index'
 import DescriptionSection from './description-section/description-section-index'
+import MainTestSection from './test-section/main-test-section'
 
 class App extends Component {
 
   constructor(props){
     super(props)
-    this.handleChildUnmount = this.handleChildUnmount.bind(this);
+    this.toggleSection = this.toggleSection.bind(this);
     this.state = { 
       toRender: [
-        <WelcomeSection unmountMe={this.handleChildUnmount}/>, //[0] - welcome section
-        <DescriptionSection unmountMe={this.handleChildUnmount}/> //[1] - description section
+        <WelcomeSection unmountMe={this.toggleSection}/>, //[0] - welcome section
+        <DescriptionSection unmountMe={this.toggleSection}/>, //[1] - description section
+        <MainTestSection/> //[2] - main test section
       ],
-      renderIndex: 0
+      renderIndex: 0 //change this to 1..2 if you want to debug faster
     };
   }
 
@@ -25,11 +27,7 @@ class App extends Component {
     else
       tempRenderIndex += 1
     
-    this.setSection(tempRenderIndex)
-  }
-
-  setSection(sectionIndex) {
-    this.setState({renderIndex: sectionIndex})
+    this.setState({renderIndex: tempRenderIndex})
   }
 
   render() {
@@ -38,10 +36,6 @@ class App extends Component {
         {this.state.toRender[this.state.renderIndex]}
       </div>
     )
-  }
-
-  handleChildUnmount() {
-    this.toggleSection()
   }
 }
 
