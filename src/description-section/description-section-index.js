@@ -26,7 +26,7 @@ export default class DescriptionSection extends Component {
           classNames="fade-lable"
         >
           <div className="label">
-              <p>Description</p>
+              <p>Что за тест? Сейчас все расскажу..</p>
           </div>
         </CSSTransition>
         <CSSTransition
@@ -36,7 +36,10 @@ export default class DescriptionSection extends Component {
           classNames="fade-text"
         >
           <div className="text">
-            It's description, isn't it?
+          Всего будет 57 вопросов. Вопросы направлены на выявление обычного способа поведения. 
+          Необходимо постараться представить типичные ситуации и дать первый «естественный» ответ, который придет в голову. 
+          Если согласен с утверждением, нажми на кнопку "Да", если нет, то мы сделали еще одну кнопку с надписью "Нет".
+
           </div>
         </CSSTransition>
         <CSSTransition
